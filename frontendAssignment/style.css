@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.source,
+.target {
+  width: 200px;
+  height: 300px;
+  border: 2px solid #ccc;
+  padding: 10px;
+  overflow: auto;
+}
+
+.item {
+  padding: 10px;
+  margin: 5px;
+  background-color: #4c2525;
+  cursor:cell
+}
+
+.item:hover {
+  background-color: #d9d9d9;
+}
+
+.success-message {
+  color: rgb(36, 103, 24);
+}
+
+.item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.resetbutton {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .source,
+  .target {
+    width: 100%;
+  }
+}
